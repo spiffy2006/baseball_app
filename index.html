@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <script type="text/javascript" src="baseball.js"></script>
+    </head>
+    <body>
+        <div id="main-view">
+            <button id="gameHistory">Game History</button>
+            <buttom id="newGame">New Game</buttom>
+        </div>
+        <div id="game-view">
+            <div id="scoreboard">
+                <div id="away-team">
+                    <table></table>
+                </div>
+                <div id="home-team">
+                    <table></table>
+                </div>
+            </div>
+            <div id="team">
+                <h2>Up to bat: <span id="teamName"></span></h2>
+                <div id="team-score">
+                    <div id="team-total"></div>
+                </div>
+                <div class="outs">
+                    <strong>Outs:</strong>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <button id="addOuts">Out</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
