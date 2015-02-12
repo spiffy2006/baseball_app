@@ -2,3 +2,16 @@
 #newGamePop {
     display: none;
 }
+
+#main-view {
+  width: 50%;
+  border: 1px solid black;
+  margin: 4em auto;
+  padding: 2em 2%;
+  text-align: center;
+}
+
+button {
+  background-color: rgab(0,0,0,0.2);
+  box-shadow: 2px 2px 5px rgab(0,0,0,0.2);
+}
