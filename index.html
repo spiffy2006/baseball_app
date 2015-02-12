@@ -1,42 +1,182 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css" />
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <!-- Our CSS -->
+        <link rel="stylesheet" href="style.css" />
+
         <script type="text/javascript" src="baseball.js"></script>
     </head>
     <body>
         <div id="main-view">
-            <button id="gameHistory">Game History</button>
-            <button id="newGame">New Game</button>
+            <button id="gameHistory" class="btn btn-default">Game History</button>
+            <button id="newGame" class="btn btn-primary" data-toggle="modal" data-target="#newGamePop">New Game</button>
         </div>
         <div id="game-view">
-            <div id="scoreboard">
+            <table class="table table-bordered" id="scoreboard">
+              <tr>
+                <th>
+                  Inning
+                </th>
+                <th>
+                  1
+                </th>
+                <th>
+                  2
+                </th>
+                <th>
+                  3
+                </th>
+                <th>
+                  4
+                </th>
+                <th>
+                  5
+                </th>
+                <th>
+                  6
+                </th>
+                <th>
+                  7
+                </th>
+                <th>
+                  8
+                </th>
+                <th>
+                  9
+                </th>
+                <th>
+                  Total
+                </th>
+              </tr>
                 <div id="away-team">
-                    <table></table>
-                </div>
-                <div id="home-team">
-                    <table></table>
-                </div>
+                  <tr>
+                    <td>
+                      <p>Away</p>
+                    </td>
+                    <td>
+                      0
+                    </td>
+                    <td>
+                      0
+                    </td>
+                    <td>
+                      0
+                    </td>
+                    <td>
+                      0
+                    </td>
+                    <td>
+                      0
+                    </td>
+                    <td>
+                      0
+                    </td>
+                    <td>
+                      0
+                    </td>
+                    <td>
+                      0
+                    </td>
+                    <td>
+                      0
+                    </td>
+                    <td>
+                      0
+                    </td>
+                  </tr>
             </div>
-            <div id="team">
-                <h2>Up to bat: <span id="teamName"></span></h2>
-                <div id="team-score">
-                    <div id="team-total"></div>
+            <div id="home-team">
+                  <tr>
+                    <td>
+                      <p>Home</p>
+                    </td>
+                    <td>
+                      1
+                    </td>
+                    <td>
+                      0
+                    </td>
+                    <td>
+                      0
+                    </td>
+                    <td>
+                      0
+                    </td>
+                    <td>
+                      0
+                    </td>
+                    <td>
+                      0
+                    </td>
+                    <td>
+                      0
+                    </td>
+                    <td>
+                      0
+                    </td>
+                    <td>
+                      0
+                    </td>
+                    <td>
+                      0
+                    </td>
+                  </tr>
                 </div>
-                <div class="outs">
-                    <strong>Outs:</strong>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <button id="addOuts">Out</button>
-                </div>
+              </table>
             </div>
-        </div>
-        <div id="newGamePop">
-            <p>Away Team Name: <input id="awayTeamName" class="newGameForm" type="text" /></p>
-            <p>Home Team Name:<input id="homeTeamName" class="newGameForm" type="text" /></p>
-            <button class="submit" function="startGame">Start Game</button>
-        </div>
+
+
+            <div id="team" class="row">
+
+                <div id="team-score" class="col col-md-9">
+                    <h2>Up to bat: <span id="teamName"></span></h2>
+                    <div id="team-total">1</div>
+                </div>
+
+                <div id="outs" class="col col-md-3">
+                    <div class="out fa fa-circle"></div>
+                    <div class="out fa fa-circle"></div>
+                    <div class="out fa fa-circle-thin"></div>
+                </div>
+
+            </div>
+
+
+
+
+
+        <div class="modal fade" id="newGamePop">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">New Game</h4>
+              </div>
+              <div class="modal-body">
+                <p>Away Team Name: <input id="awayTeamName" class="newGameForm form-control" type="text" /></p>
+                <p>Home Team Name:<input id="homeTeamName" class="newGameForm form-control" type="text" /></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="submit btn btn-primary" function="startGame">Start Game</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
     </body>
 </html>

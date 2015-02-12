@@ -1,6 +1,6 @@
 #game-view,
 #newGamePop {
-    display: none;
+    /*display: none;*/
 }
 
 #main-view {
@@ -11,7 +11,80 @@
   text-align: center;
 }
 
-button {
-  background-color: rgba(0,0,0,0.2);
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+.form-group {
+  width: 35%;
 }
+
+.dot {
+  width: 100px;
+  height: 100px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 50px;
+}
+
+.fa {
+  display: block;
+}
+
+.fa:before {
+  color: #ff670f;
+  font-size: 100px;
+}
+
+table, th {
+  text-align: center;
+}
+
+th {
+  font-size: 1.3em;
+  color: #fff;
+  background: rgb(37,141,200); /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  rgba(37,141,200,1) 0%, rgba(37,141,200,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(37,141,200,1)), color-stop(100%,rgba(37,141,200,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg,  rgba(37,141,200,1) 0%,rgba(37,141,200,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg,  rgba(37,141,200,1) 0%,rgba(37,141,200,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg,  rgba(37,141,200,1) 0%,rgba(37,141,200,1) 100%); /* IE10+ */
+  background: linear-gradient(135deg,  rgba(37,141,200,1) 0%,rgba(37,141,200,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#258dc8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+div#team-score {
+
+}
+
+div#team-score h2 {
+  text-align: center;
+}
+
+div#team-total {
+  text-align: center;
+  font-size: 15em;
+}
+
+.out {
+  margin: .5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*end*/
