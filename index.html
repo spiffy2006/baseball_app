@@ -64,8 +64,8 @@
               </tr>
                 <div id="away-team">
                   <tr>
-                    <td>
-                      <p>Away</p>
+                    <td class="teamName">
+                      <p id="away"></p>
                     </td>
                     <td>
                       0
@@ -101,8 +101,8 @@
             </div>
             <div id="home-team">
                   <tr>
-                    <td>
-                      <p>Home</p>
+                    <td class="teamName">
+                      <p id="home"></p>
                     </td>
                     <td>
                       1
@@ -137,25 +137,25 @@
                   </tr>
                 </div>
               </table>
-            </div>
 
 
-            <div id="team" class="row">
 
-                <div id="team-score" class="col col-md-9">
-                    <h2>Up to bat: <span id="teamName"></span></h2>
-                    <div id="team-total">1</div>
-                </div>
+              <div id="team" class="row">
 
-                <div id="outs" class="col col-md-3">
-                    <div class="out fa fa-circle"></div>
-                    <div class="out fa fa-circle"></div>
-                    <div class="out fa fa-circle-thin"></div>
-                </div>
+                  <div id="team-score" class="col col-xs-9">
+                      <h2>Up to bat: <span id="upToBat"></span></h2>
+                      <div id="team-total">1</div>
+                  </div>
 
-            </div>
+                  <div id="outs" class="col col-xs-3">
+                      <div class="out fa fa-circle"></div>
+                      <div class="out fa fa-circle"></div>
+                      <div class="out fa fa-circle-thin"></div>
+                  </div>
 
+              </div>
 
+          </div>
 
 
 
@@ -172,7 +172,7 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="submit btn btn-primary" function="startGame">Start Game</button>
+                <button type="button" class="submit btn btn-primary" function="startGame" id="startGame" data-dismiss="modal">Start Game</button>
               </div>
             </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
